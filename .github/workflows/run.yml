@@ -38,7 +38,13 @@ jobs:
       #  Run decoder using prebuilt Docker image
       - name: Download CAIDA dataset
         run: wget https://drive.google.com/file/d/1z-YyZi-STs6A3-CB07Lh_0qJBXcO2r4u/view?usp=sharing -O directed_caida.pkl
-        
+
+      - name: Check dataset file
+        run: |
+          echo "Listing datasets folder:"
+          ls -la datasets/
+          file datasets/directed_caida.pkl
+
       - name: Run decoder in Docker container
         run: |
           docker run --rm \
