@@ -79,7 +79,7 @@ def parse_decoder(parser):
         max_pattern_size=5,
         min_neighborhood_size=2,
         max_neighborhood_size=3,
-        search_strategy="mcts",
+        search_strategy="beam",
         out_batch_size=3,
         node_anchored=True,
         memory_limit=1000000
