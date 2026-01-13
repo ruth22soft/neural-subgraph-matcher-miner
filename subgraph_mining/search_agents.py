@@ -944,6 +944,8 @@ class BeamSearchAgent(SearchAgent):
         self.current_size += 1
         if self.current_size > self.max_pattern_size:
             self.current_size = self.min_pattern_size
+
+        self.trials_completed += 1
     
     def finish_search(self):
         """Finish search and return identified patterns."""
