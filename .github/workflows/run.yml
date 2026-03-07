@@ -69,9 +69,8 @@ jobs:
                 --dataset=metta.pkl \
                 --n_trials=200 \
                 --node_anchored \
+                --n_neighborhoods 100 \
                 --out_path=/app/results/patterns.pkl \
-                
-
 
               echo 'Checking output directories...'
               ls -la /app/plots/cluster
